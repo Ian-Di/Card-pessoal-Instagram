@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body *{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+
+body{
+    background-image: url(./assets/fundo-preto-e-branco-ondulado.jpg);
+    background-position: center;
+}
+
+#conteiner{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.048);
+
+    padding: 10px;
+    margin: 56px auto;
+    width: 360px;
+
+    animation: go-back 1s;
+}
+
+#profile{
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img{
+  width: 112px;
+  border: 2.5px solid white;
+  border-radius: 50%;
+}
+
+#profile p{
+    margin-top: 20px;
+    line-height: 5px;
+}
+
+#profile img:hover{
+    border: 1px solid black;
+}
+
+ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 24px 0;
+}
+
+ul li a{
+    text-decoration: none;
+
+    box-shadow: 2px 2px 0px 2px white;
+    background-color: black;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   padding: 16px 24px;
+}
+
+ul li a:hover{
+    box-shadow: 1px 1px 0px 0px black;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+
+    padding: 34px;
+
+    font-size: 44px;
+}
+
+#footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#footer a:hover{
+    background-color: white;
+}
+ion-icon{
+    color: black;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
+
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+}
